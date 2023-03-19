@@ -2,40 +2,41 @@ package com.tr.kafka.model;
 
 public class User {
 
-    private String name;
-    private String dept;
+	Integer id;
+	String firstName;
+	String lastName;
 
-    public String getName() {
-        return name;
-    }
+	public User() {
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public User(int id, String firstName, String lastName) {
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 
-    public String getDept() {
-        return dept;
-    }
+	public Integer getId() {
+		return id;
+	}
 
-    public void setDept(String dept) {
-        this.dept = dept;
-    }
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
-    public User() {
-    }
+	public String getFirstName() {
+		return firstName;
+	}
 
-    public User(String name, String dept) {
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
 
-        this.name = name;
-        this.dept = dept;
-    }
+	public String getLastName() {
+		return lastName;
+	}
 
-    @Override
-    public String toString() {
-        final StringBuffer sb = new StringBuffer("User{");
-        sb.append("name='").append(name).append('\'');
-        sb.append(", dept='").append(dept).append('\'');
-        sb.append('}');
-        return sb.toString();
-    }
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
 }
